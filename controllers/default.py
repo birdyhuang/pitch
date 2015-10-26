@@ -52,6 +52,7 @@ def call():
     """
     return service()
 
+@auth.requires_login()
 def entry_post():
 	#form = crud.create(db.post) # deprecated
 	form = SQLFORM(db.post).process()
