@@ -94,3 +94,4 @@ auth.settings.reset_password_requires_verification = True
 db.define_table('post',
 		Field('Cont', 'text'),
 		Field('user_id', db.auth_user))
+
