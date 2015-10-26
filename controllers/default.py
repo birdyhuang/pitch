@@ -57,4 +57,7 @@ def call():
     """
     return service()
 
-
+def entry_post():
+	#form = crud.create(db.post) # deprecated
+	form = SQLFORM(db.post).process()
+	return dict(form=form)
